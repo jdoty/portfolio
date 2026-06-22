@@ -6,13 +6,14 @@ const experiences = [
     title: "Senior Application Security Engineer",
     period: "Jan 2025 -- Jun 2025",
     description:
-      "Embedded application security into a HIPAA-regulated SaaS development lifecycle supporting sensitive healthcare data.",
+      "Led application security efforts within a HIPAA-regulated SaaS platform handling sensitive healthcare data.",
     bullets: [
-      "Conducted threat modeling and architecture reviews prior to feature release to proactively identify systemic risk",
-      "Integrated static, dynamic, and dependency scanning into CI/CD workflows",
-      "Built Python-based automation to aggregate and normalize vulnerability data across repositories, enabling prioritized remediation and improved engineering visibility",
-      "Partnered with engineering teams to contextualize findings and prioritize remediation based on exploitability and business impact",
-      "Defined and documented security processes aligned with industry frameworks to improve organizational maturity",
+      "Designed and implemented an automated vulnerability management pipeline integrating GitHub Dependabot with Jira and reporting dashboards",
+      "Developed Python scripts to aggregate open vulnerabilities across repositories and create prioritized remediation tickets based on SLA",
+      "Conducted threat modeling and secure architecture reviews prior to release",
+      "Performed static, dynamic, and dependency-based testing and translated findings into prioritized remediation plans",
+      "Defined and documented organization-wide application security policies aligned with OWASP SAMM",
+      "Partnered with engineering and DevOps teams to integrate security controls into CI/CD workflows",
     ],
   },
   {
@@ -20,13 +21,14 @@ const experiences = [
     title: "Sr. Security Consultant (Threat Management)",
     period: "Jan 2017 -- Mar 2024",
     description:
-      "Senior application security consultant on enterprise engagements across financial services and insurance organizations supporting high-volume transactional systems.",
+      "Senior application security advisor for enterprise clients, including financial services and insurance organizations supporting high-volume transactional systems.",
     bullets: [
-      "Led threat modeling and extensive manual code review engagements involving millions of lines of code",
-      "Performed authenticated and unauthenticated testing of web, API, mobile, and thick-client applications",
+      "Designed and implemented a repeatable threat modeling process for a large auto insurance company to be executed by development teams",
+      "Led large-scale application security engagements, including multi-application threat modeling and extensive code review projects involving millions of lines of code",
+      "Conducted manual code reviews and application security assessments across web, mobile, API, and thick-client systems",
       "Evaluated payment processing systems, authentication workflows, and sensitive financial data handling architectures",
-      "Translated technical findings into executive-ready reports with risk-based remediation strategies",
-      "Contributed to improving client security processes by integrating risk assessment outcomes into development workflows",
+      "Provided structured remediation guidance and assisted clients in integrating automated security testing into development pipelines",
+      "Participated in internal peer review processes to ensure technical accuracy and quality of security deliverables",
     ],
   },
   {
@@ -38,7 +40,8 @@ const experiences = [
     bullets: [
       "Performed application security assessments and code reviews across web, mobile, API, and thick-client applications",
       "Contributed to secure SDLC execution for a financial monitoring and fraud prevention platform",
-      "Supported production application maintenance and troubleshooting for high-visibility client systems",
+      "Developed and maintained automated regression test suites for enterprise web applications",
+      "Supported production application maintenance, including troubleshooting and emergency issue resolution",
     ],
   },
 ];

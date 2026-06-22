@@ -26,8 +26,7 @@ export default function Contact() {
         <FadeIn delay={0.1}>
           <p className="mt-6 text-gray-600">
             Looking for a security assessment, fractional AppSec support, or a
-            full-time hire? I would love to hear about your project. Drop me a
-            message and I will get back to you within 24 hours.
+            full-time hire? I would love to hear about your project.
           </p>
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
             <a

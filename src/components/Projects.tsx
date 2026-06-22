@@ -5,7 +5,7 @@ const projects = [
     name: "IdleHunt",
     url: "https://idlehunt.app",
     description:
-      "AI-powered job search app that scrapes 10+ job boards, scores roles against your resume using NLP, and generates tailored cover letters. Handles the grind so you can focus on prep and interviews.",
+      "Mobile app that automates the job search grind. Scrapes 10+ job boards, scores roles against your resume using NLP, and generates tailored cover letters. Available on iOS and Android.",
     tag: "Live",
     tech: ["React Native", "Python", "OpenAI", "PostgreSQL"],
   },
@@ -13,15 +13,15 @@ const projects = [
     name: "BountyBrain",
     url: null,
     description:
-      "Recon and workflow dashboard for bug bounty hunting. Integrates with HackerOne, automates subdomain enumeration and port scanning, and tracks findings across programs.",
-    tag: "Tool",
-    tech: ["Next.js", "Go", "Docker", "Nuclei"],
+      "Recon and workflow dashboard for bug bounty hunting. Will integrate with HackerOne, automate subdomain enumeration and port scanning, and track findings across programs.",
+    tag: "In Progress",
+    tech: ["Next.js", "Python", "Docker"],
   },
   {
     name: "BrewBeat",
     url: null,
     description:
-      "Indie rhythm typing game where you type lyrics to the beat. Built as a creative side project to learn game dev with Godot 4 and GDScript.",
+      "Indie rhythm typing game where you type lyrics to the beat. A creative side project to learn game dev with Godot 4 and GDScript.",
     tag: "In Progress",
     tech: ["Godot 4", "GDScript", "Aseprite"],
   },
