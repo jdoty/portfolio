@@ -2,6 +2,7 @@
 
 @theme {
   --color-teal: #006D77;
+  --color-teal-dark: #004E56;
   --color-seafoam: #83C5BE;
   --color-ice: #EDF6F9;
   --color-coral-light: #FFDDD2;
@@ -27,4 +28,28 @@ html {
 .animate-fade-up {
   opacity: 0;
   animation: fade-up 0.6s ease-out forwards;
+}
+
+.hero-grid {
+  background-image: radial-gradient(
+    circle,
+    rgba(131, 197, 190, 0.12) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+}
+
+.section-divider {
+  position: relative;
+}
+
+.section-divider::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--color-ice));
+  pointer-events: none;
 }

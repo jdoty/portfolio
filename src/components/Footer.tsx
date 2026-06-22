@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="py-10 border-t border-seafoam/30 bg-ice">
+    <footer className="py-10 bg-teal-dark border-t border-white/10">
       <div className="max-w-5xl mx-auto px-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-white/40">
             {new Date().getFullYear()} Jason Doty. Built with Next.js and
             Tailwind CSS.
           </p>
@@ -12,7 +12,7 @@ export default function Footer() {
               href="https://linkedin.com/in/jason-doty-appsec/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-teal transition-colors"
+              className="text-white/40 hover:text-seafoam transition-colors"
               aria-label="LinkedIn"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -23,7 +23,7 @@ export default function Footer() {
               href="https://github.com/jdoty"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-teal transition-colors"
+              className="text-white/40 hover:text-seafoam transition-colors"
               aria-label="GitHub"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -32,7 +32,7 @@ export default function Footer() {
             </a>
             <a
               href="mailto:jasondoty87@gmail.com"
-              className="text-gray-400 hover:text-teal transition-colors"
+              className="text-white/40 hover:text-seafoam transition-colors"
               aria-label="Email"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

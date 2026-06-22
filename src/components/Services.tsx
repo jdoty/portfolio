@@ -45,29 +45,32 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24">
-      <div className="max-w-5xl mx-auto px-6">
+    <section id="services" className="relative py-24 bg-teal-dark overflow-hidden">
+      <div className="absolute inset-0 hero-grid" />
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-teal/20 rounded-full blur-[120px] -translate-y-1/2 -translate-x-1/4" />
+
+      <div className="relative max-w-5xl mx-auto px-6">
         <FadeIn>
-          <h2 className="text-3xl font-bold text-teal">Services</h2>
-          <div className="mt-2 w-12 h-1 bg-seafoam rounded-full" />
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl">
+          <h2 className="text-3xl font-bold text-white">Services</h2>
+          <div className="mt-2 w-12 h-1 bg-coral rounded-full" />
+          <p className="mt-4 text-lg text-white/60 max-w-2xl">
             Available for freelance engagements, fractional AppSec roles, and
             short-term consulting. Whether you need a one-time assessment or
             ongoing security support, I can help.
           </p>
         </FadeIn>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-2">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {services.map((service, i) => (
             <FadeIn key={service.title} delay={i * 0.1}>
-              <div className="bg-white rounded-xl p-6 shadow-sm border border-seafoam/20 hover:shadow-md transition-shadow h-full">
-                <div className="w-12 h-12 rounded-lg bg-ice flex items-center justify-center text-teal mb-4">
+              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-colors h-full">
+                <div className="w-12 h-12 rounded-lg bg-seafoam/10 flex items-center justify-center text-seafoam mb-4">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold text-white">
                   {service.title}
                 </h3>
-                <p className="mt-3 text-gray-600 leading-relaxed">
+                <p className="mt-3 text-white/60 leading-relaxed">
                   {service.description}
                 </p>
               </div>

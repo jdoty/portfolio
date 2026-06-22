@@ -59,7 +59,7 @@ export default function Skills() {
         <div className="mt-12 grid gap-8 sm:grid-cols-2">
           {categories.map((cat, i) => (
             <FadeIn key={cat.name} delay={i * 0.1}>
-              <div className="bg-white rounded-xl p-6 shadow-sm border border-seafoam/20">
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-seafoam/20 border-t-2 border-t-teal">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
                   {cat.name}
                 </h3>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const links = [
   { href: "#about", label: "About" },
@@ -13,13 +13,30 @@ const links = [
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    function onScroll() {
+      setScrolled(window.scrollY > 50);
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-seafoam/30">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white/95 backdrop-blur-sm border-b border-seafoam/30 shadow-sm"
+          : "bg-transparent"
+      }`}
+    >
       <div className="max-w-5xl mx-auto px-6 flex items-center justify-between h-16">
         <a
           href="#"
-          className="text-teal font-bold text-xl tracking-tight"
+          className={`font-bold text-xl tracking-tight transition-colors ${
+            scrolled ? "text-teal" : "text-white"
+          }`}
           aria-label="Back to top"
         >
           JD
@@ -30,7 +47,11 @@ export default function Nav() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-gray-600 hover:text-teal transition-colors"
+              className={`text-sm transition-colors ${
+                scrolled
+                  ? "text-gray-600 hover:text-teal"
+                  : "text-white/70 hover:text-white"
+              }`}
             >
               {link.label}
             </a>
@@ -39,7 +60,9 @@ export default function Nav() {
 
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-teal p-2"
+          className={`md:hidden p-2 transition-colors ${
+            scrolled ? "text-teal" : "text-white"
+          }`}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
         >
@@ -71,7 +94,7 @@ export default function Nav() {
 
       <div
         className={`md:hidden overflow-hidden bg-white border-b border-seafoam/30 transition-all duration-200 ${
-          open ? "max-h-60 opacity-100" : "max-h-0 opacity-0 border-b-0"
+          open ? "max-h-80 opacity-100" : "max-h-0 opacity-0 border-b-0"
         }`}
       >
         <div className="px-6 py-4 flex flex-col gap-4">

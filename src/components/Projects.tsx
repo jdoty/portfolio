@@ -39,7 +39,7 @@ export default function Projects() {
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {projects.map((project, i) => (
             <FadeIn key={project.name} delay={i * 0.1}>
-              <div className="bg-white rounded-xl p-6 shadow-sm border border-seafoam/20 hover:shadow-md transition-shadow h-full flex flex-col">
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-seafoam/20 border-l-2 border-l-teal hover:shadow-md hover:-translate-y-1 transition-all duration-200 h-full flex flex-col">
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="text-xl font-semibold text-gray-900">
                     {project.name}
