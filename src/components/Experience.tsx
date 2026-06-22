@@ -6,39 +6,39 @@ const experiences = [
     title: "Senior Application Security Engineer",
     period: "Jan 2025 -- Jun 2025",
     description:
-      "Built AppSec program foundation from scratch in a HIPAA-regulated SaaS environment.",
+      "Embedded application security into a HIPAA-regulated SaaS development lifecycle supporting sensitive healthcare data.",
     bullets: [
-      "Stood up SAST, SCA, and secrets-detection pipelines across 30+ microservices in the first 60 days",
-      "Designed and implemented a secure code review process integrated into GitHub PR workflows",
-      "Led threat modeling sessions for critical patient-facing features under HIPAA constraints",
-      "Created developer security training program tailored to React/Node.js stack",
+      "Conducted threat modeling and architecture reviews prior to feature release to proactively identify systemic risk",
+      "Integrated static, dynamic, and dependency scanning into CI/CD workflows",
+      "Built Python-based automation to aggregate and normalize vulnerability data across repositories, enabling prioritized remediation and improved engineering visibility",
+      "Partnered with engineering teams to contextualize findings and prioritize remediation based on exploitability and business impact",
+      "Defined and documented security processes aligned with industry frameworks to improve organizational maturity",
     ],
   },
   {
     company: "Optiv",
-    title: "Senior Security Consultant",
-    period: "2017 -- 2024",
+    title: "Sr. Security Consultant (Threat Management)",
+    period: "Jan 2017 -- Mar 2024",
     description:
-      "Led enterprise AppSec engagements across financial services, healthcare, retail, and regulated industries.",
+      "Senior application security consultant on enterprise engagements across financial services and insurance organizations supporting high-volume transactional systems.",
     bullets: [
-      "Performed 200+ web application penetration tests and source code reviews for Fortune 500 clients",
-      "Designed and delivered secure SDLC programs for organizations with 500+ developers",
-      "Identified critical authentication bypass and injection vulnerabilities in banking platforms",
-      "Mentored junior consultants and developed internal assessment methodology documentation",
-      "Specialized in OAuth/OIDC, API security, and cloud-native application architectures",
+      "Led threat modeling and extensive manual code review engagements involving millions of lines of code",
+      "Performed authenticated and unauthenticated testing of web, API, mobile, and thick-client applications",
+      "Evaluated payment processing systems, authentication workflows, and sensitive financial data handling architectures",
+      "Translated technical findings into executive-ready reports with risk-based remediation strategies",
+      "Contributed to improving client security processes by integrating risk assessment outcomes into development workflows",
     ],
   },
   {
-    company: "Denim Group / Coalfire",
-    title: "Application Security Consultant",
-    period: "2010 -- 2016",
+    company: "Denim Group (Now Coalfire)",
+    title: "Application Development Consultant / Application Security Consultant",
+    period: "Dec 2010 -- Oct 2016",
     description:
-      "Manual security assessments, code reviews, and client-facing consulting for defense and commercial clients.",
+      "Application security assessments, code reviews, and secure development across web, API, and distributed systems.",
     bullets: [
-      "Conducted manual code reviews in Java, C#, Python, and PHP for government and enterprise clients",
-      "Built custom fuzzing and automation tooling to improve assessment coverage and efficiency",
-      "Performed network and application penetration testing for PCI-DSS and FedRAMP compliance",
-      "Authored detailed remediation guidance and presented findings to executive stakeholders",
+      "Performed application security assessments and code reviews across web, mobile, API, and thick-client applications",
+      "Contributed to secure SDLC execution for a financial monitoring and fraud prevention platform",
+      "Supported production application maintenance and troubleshooting for high-visibility client systems",
     ],
   },
 ];
@@ -84,8 +84,15 @@ export default function Experience() {
           <FadeIn delay={0.3}>
             <div className="relative pl-10">
               <div className="absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full bg-coral border-[3px] border-white ring-2 ring-seafoam/40" />
-              <h3 className="text-xl font-semibold text-gray-900">UTSA</h3>
+              <h3 className="text-xl font-semibold text-gray-900">
+                University of Texas at San Antonio
+              </h3>
               <p className="text-teal font-medium">B.S. Computer Science</p>
+              <p className="text-sm text-gray-500 mt-1">Aug 2005 -- Dec 2010</p>
+              <p className="mt-2 text-gray-600 text-sm">
+                Concentrations in Software Engineering and Computer &amp;
+                Information Security
+              </p>
             </div>
           </FadeIn>
         </div>
