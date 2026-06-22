@@ -17,8 +17,9 @@ export default function Hero() {
           className="animate-fade-up mt-6 text-lg text-gray-600 max-w-xl mx-auto"
           style={{ animationDelay: "0.3s" }}
         >
-          Building secure software and enabling development teams to ship with
-          confidence.
+          13+ years securing applications for Fortune 500 companies, startups,
+          and everything in between. I find the vulnerabilities scanners miss
+          and build the programs that prevent them.
         </p>
 
         <div

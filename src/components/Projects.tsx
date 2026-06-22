@@ -5,22 +5,25 @@ const projects = [
     name: "IdleHunt",
     url: "https://idlehunt.app",
     description:
-      "AI-powered job search app. Scrapes 10+ job boards, scores roles against your resume, generates tailored cover letters. iOS and Android.",
+      "AI-powered job search app that scrapes 10+ job boards, scores roles against your resume using NLP, and generates tailored cover letters. Handles the grind so you can focus on prep and interviews.",
     tag: "Live",
+    tech: ["React Native", "Python", "OpenAI", "PostgreSQL"],
   },
   {
     name: "BountyBrain",
     url: null,
     description:
-      "Bug bounty recon dashboard with HackerOne integration and asset discovery tooling.",
+      "Recon and workflow dashboard for bug bounty hunting. Integrates with HackerOne, automates subdomain enumeration and port scanning, and tracks findings across programs.",
     tag: "Tool",
+    tech: ["Next.js", "Go", "Docker", "Nuclei"],
   },
   {
     name: "BrewBeat",
     url: null,
     description:
-      "Indie rhythm typing game built in Godot 4. Currently in development.",
+      "Indie rhythm typing game where you type lyrics to the beat. Built as a creative side project to learn game dev with Godot 4 and GDScript.",
     tag: "In Progress",
+    tech: ["Godot 4", "GDScript", "Aseprite"],
   },
 ];
 
@@ -58,6 +61,18 @@ export default function Projects() {
                 <p className="mt-3 text-gray-600 flex-1">
                   {project.description}
                 </p>
+                {project.tech && (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {project.tech.map((t) => (
+                      <span
+                        key={t}
+                        className="text-xs px-2 py-1 rounded bg-ice text-teal font-medium"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             </FadeIn>
           ))}

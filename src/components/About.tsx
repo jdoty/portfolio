@@ -17,6 +17,17 @@ export default function About() {
             into their workflows rather than bolting it on after the fact.
           </p>
         </FadeIn>
+        <FadeIn delay={0.2}>
+          <p className="mt-6 text-lg leading-relaxed">
+            My approach centers on reducing friction between security and
+            development. I have built AppSec programs from the ground up, led
+            hundreds of penetration tests and code reviews for Fortune 500
+            clients, and designed secure SDLC processes that engineering teams
+            actually adopt. Whether embedded full-time or engaged for a targeted
+            assessment, I deliver findings that are actionable -- not just a
+            list of CVEs.
+          </p>
+        </FadeIn>
       </div>
     </section>
   );

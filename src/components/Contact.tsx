@@ -24,7 +24,12 @@ export default function Contact() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2">
+          <p className="mt-6 text-gray-600">
+            Looking for a security assessment, fractional AppSec support, or a
+            full-time hire? I would love to hear about your project. Drop me a
+            message and I will get back to you within 24 hours.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
             <a
               href="mailto:jasondoty87@gmail.com"
               className="text-teal hover:text-teal/70 transition-colors"
@@ -38,6 +43,14 @@ export default function Contact() {
               className="text-teal hover:text-teal/70 transition-colors"
             >
               LinkedIn
+            </a>
+            <a
+              href="https://github.com/jdoty"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal hover:text-teal/70 transition-colors"
+            >
+              GitHub
             </a>
           </div>
         </FadeIn>
